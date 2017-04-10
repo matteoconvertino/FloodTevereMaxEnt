@@ -1,0 +1,283 @@
+Wed Dec 07 18:04:33 EST 2016
+MaxEnt version 3.3.3k
+Checking header of /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/layers/tev_acc500m.asc
+Checking header of /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/layers/tev_dem500m.asc
+Checking header of /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/layers/tev_dir500m.asc
+Checking header of /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/layers/tev_landuse500m1.asc
+Checking header of /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/layers/tev_topoindex500m.asc
+Reading samples from floods.csv
+Read samples: max memory 1908932608, total allocated 446693376, free 349896232, used 96797144, increment -313248528
+Extractor: max memory 1908932608, total allocated 446693376, free 342807568, used 103885808, increment 7088664
+Extracting random background and sample data
+Warning: Sample at 297381.35259455, 4685748.7961362 in floods.csv is missing some environmental data (e.g. tev_landuse500m1)
+Warning: Skipping sample at 297381.35259455, 4685748.7961362
+Warning: Sample at 298381.35259455, 4685248.7961362 in floods.csv is missing some environmental data (e.g. tev_landuse500m1)
+Warning: Skipping sample at 298381.35259455, 4685248.7961362
+Warning: Sample at 299881.35259455, 4683748.7961362 in floods.csv is missing some environmental data (e.g. tev_landuse500m1)
+Warning: Skipping sample at 299881.35259455, 4683748.7961362
+Warning: Sample at 300881.35259455, 4683748.7961362 in floods.csv is missing some environmental data (e.g. tev_landuse500m1)
+Warning: Skipping sample at 300881.35259455, 4683748.7961362
+Warning: Sample at 302881.35259455, 4674248.7961362 in floods.csv is missing some environmental data (e.g. tev_landuse500m1)
+Warning: Skipping sample at 302881.35259455, 4674248.7961362
+Warning: Sample at 293881.35259455, 4652248.7961362 in floods.csv is missing some environmental data (e.g. tev_landuse500m1)
+Warning: Skipping sample at 293881.35259455, 4652248.7961362
+Warning: Sample at 289381.35259455, 4635748.7961362 in floods.csv is missing some environmental data (e.g. tev_landuse500m1)
+Warning: Skipping sample at 289381.35259455, 4635748.7961362
+86371 points with values for all grids
+Adding samples to background in feature space
+Command line used: 
+Command line to repeat: java density.MaxEnt nowarnings noprefixes responsecurves jackknife outputformat=cumulative outputdirectory=/Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/outputallcorrectTI_nofloodareas_nofloodcontrols_BK50 samplesfile=/Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/samples/floods.csv environmentallayers=/Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/layers randomseed randomtestpoints=50 responsecurvesexponent addallsamplestobackground fadebyclamping appendtoresultsfile -N tev_controlstruct500m -N tev_controlstruct500m1 -N tev_flooded500m -N tev_flooded500m1 -N tev_landuse500m
+Species: flood
+Layers: tev_acc500m tev_dem500m tev_dir500m tev_landuse500m1 tev_topoindex500m
+Layertypes: Continuous Continuous Continuous Continuous Continuous
+responsecurves: true
+jackknife: true
+outputformat: cumulative
+outputdirectory: /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/outputallcorrectTI_nofloodareas_nofloodcontrols_BK50
+samplesfile: /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/samples/floods.csv
+environmentallayers: /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/layers
+randomseed: true
+randomtestpoints: 50
+responsecurvesexponent: true
+addallsamplestobackground: true
+fadebyclamping: true
+appendtoresultsfile: true
+
+getSamples: max memory 1908932608, total allocated 446693376, free 339263328, used 107430048, increment 3544240
+Making features
+makeFeatures: max memory 1908932608, total allocated 446693376, free 336275152, used 110418224, increment 2988176
+flood: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 446693376, free 326932144, used 119761232, increment 9343008
+linearPredictor: max memory 1908932608, total allocated 446693376, free 326932144, used 119761232, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 446693376, free 326932144, used 119761232, increment 0
+Sequential: max memory 1908932608, total allocated 446693376, free 326932144, used 119761232, increment 0
+Initial loss: 9.2927495082169
+Initial test loss: 9.2927495082169
+Time since start: 6.291
+500: time = 6.092000 loss = 7.906985 testLoss 7.763709
+Resulting gain: 1.385764966805131
+Projecting...
+Writing file /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/outputallcorrectTI_nofloodareas_nofloodcontrols_BK50/flood.asc
+Writing /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/outputallcorrectTI_nofloodareas_nofloodcontrols_BK50/plots/flood.png
+Time since start: 7.306
+flood response curves
+Response curve: only tev_acc500m
+Making features
+makeFeatures: max memory 1908932608, total allocated 354942976, free 198508640, used 156434336, increment 36673104
+flood tev_acc500m: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 354942976, free 198436736, used 156506240, increment 71904
+linearPredictor: max memory 1908932608, total allocated 354942976, free 198436736, used 156506240, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 354942976, free 198436736, used 156506240, increment 0
+Sequential: max memory 1908932608, total allocated 354942976, free 198436736, used 156506240, increment 0
+Initial loss: 9.2927495082169
+Time since start: 9.383
+500: time = 1.658000 loss = 8.746282
+Resulting gain: 0.5464676839172657
+flood response curves
+Response curve: only tev_dem500m
+Making features
+makeFeatures: max memory 1908932608, total allocated 354942976, free 313453512, used 41489464, increment -115016776
+flood tev_dem500m: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 354942976, free 313453512, used 41489464, increment 0
+linearPredictor: max memory 1908932608, total allocated 354942976, free 313453512, used 41489464, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 354942976, free 313453512, used 41489464, increment 0
+Sequential: max memory 1908932608, total allocated 354942976, free 313453512, used 41489464, increment 0
+Initial loss: 9.2927495082169
+Time since start: 10.479
+420: time = 0.988000 loss = 8.319942
+Resulting gain: 0.972807438168422
+flood response curves
+Response curve: only tev_dir500m
+Making features
+makeFeatures: max memory 1908932608, total allocated 354942976, free 123407512, used 231535464, increment 190046000
+flood tev_dir500m: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 354942976, free 123157496, used 231785480, increment 250016
+linearPredictor: max memory 1908932608, total allocated 354942976, free 123157496, used 231785480, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 354942976, free 123157496, used 231785480, increment 0
+Sequential: max memory 1908932608, total allocated 354942976, free 123157496, used 231785480, increment 0
+Initial loss: 9.2927495082169
+120: time = 0.251000 loss = 9.225192
+Resulting gain: 0.06755711402657916
+flood response curves
+Response curve: only tev_landuse500m1
+Making features
+makeFeatures: max memory 1908932608, total allocated 354942976, free 116094288, used 238848688, increment 7063208
+flood tev_landuse500m1: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 354942976, free 116094288, used 238848688, increment 0
+linearPredictor: max memory 1908932608, total allocated 354942976, free 116094288, used 238848688, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 354942976, free 116094288, used 238848688, increment 0
+Sequential: max memory 1908932608, total allocated 354942976, free 116094288, used 238848688, increment 0
+Initial loss: 9.2927495082169
+Time since start: 11.576
+420: time = 0.630000 loss = 8.666610
+Resulting gain: 0.626139102225503
+flood response curves
+Response curve: only tev_topoindex500m
+Making features
+makeFeatures: max memory 1908932608, total allocated 354942976, free 93584576, used 261358400, increment 22509712
+flood tev_topoindex500m: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 354942976, free 93334760, used 261608216, increment 249816
+linearPredictor: max memory 1908932608, total allocated 354942976, free 93334760, used 261608216, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 354942976, free 93334760, used 261608216, increment 0
+Sequential: max memory 1908932608, total allocated 354942976, free 93334760, used 261608216, increment 0
+Initial loss: 9.2927495082169
+Time since start: 15.466
+440: time = 3.794000 loss = 8.389141
+Resulting gain: 0.9036084406211806
+flood response curves
+Jackknife: leave tev_acc500m out
+Making features
+makeFeatures: max memory 1908932608, total allocated 401604608, free 194023288, used 207581320, increment -54026896
+flood tev_acc500m: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 401604608, free 181660664, used 219943944, increment 12362624
+linearPredictor: max memory 1908932608, total allocated 401604608, free 181660664, used 219943944, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 401604608, free 181660664, used 219943944, increment 0
+Sequential: max memory 1908932608, total allocated 401604608, free 181660664, used 219943944, increment 0
+Initial loss: 9.2927495082169
+Initial test loss: 9.2927495082169
+Time since start: 21.009
+500: time = 4.946000 loss = 7.935516 testLoss 7.792925
+Jackknife: leave tev_dem500m out
+Making features
+makeFeatures: max memory 1908932608, total allocated 488636416, free 72043696, used 416592720, increment 196648776
+flood tev_dem500m: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 488636416, free 63949608, used 424686808, increment 8094088
+linearPredictor: max memory 1908932608, total allocated 488636416, free 63949608, used 424686808, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 488636416, free 63949608, used 424686808, increment 0
+Sequential: max memory 1908932608, total allocated 488636416, free 63949608, used 424686808, increment 0
+Initial loss: 9.2927495082169
+Initial test loss: 9.2927495082169
+Time since start: 26.479
+500: time = 5.315000 loss = 8.137486 testLoss 7.996776
+Jackknife: leave tev_dir500m out
+Making features
+makeFeatures: max memory 1908932608, total allocated 413138944, free 224913736, used 188225208, increment -236461600
+flood tev_dir500m: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 413138944, free 218445168, used 194693776, increment 6468568
+linearPredictor: max memory 1908932608, total allocated 413138944, free 218445168, used 194693776, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 413138944, free 218361104, used 194777840, increment 84064
+Sequential: max memory 1908932608, total allocated 413138944, free 218361104, used 194777840, increment 0
+Initial loss: 9.2927495082169
+Initial test loss: 9.2927495082169
+Time since start: 32.045
+500: time = 5.360000 loss = 7.915330 testLoss 7.768004
+Jackknife: leave tev_landuse500m1 out
+Making features
+makeFeatures: max memory 1908932608, total allocated 327680000, free 261849288, used 65830712, increment -128947128
+flood tev_landuse500m1: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 327680000, free 252250088, used 75429912, increment 9599200
+linearPredictor: max memory 1908932608, total allocated 327680000, free 252250088, used 75429912, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 327680000, free 252250088, used 75429912, increment 0
+Sequential: max memory 1908932608, total allocated 327680000, free 252250088, used 75429912, increment 0
+Initial loss: 9.2927495082169
+Initial test loss: 9.2927495082169
+Time since start: 37.65
+500: time = 5.452000 loss = 7.993266 testLoss 7.886501
+Jackknife: leave tev_topoindex500m out
+Making features
+makeFeatures: max memory 1908932608, total allocated 277872640, free 224041680, used 53830960, increment -21598952
+flood tev_topoindex500m: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 277872640, free 220113640, used 57759000, increment 3928040
+linearPredictor: max memory 1908932608, total allocated 277872640, free 220113640, used 57759000, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 277872640, free 220113640, used 57759000, increment 0
+Sequential: max memory 1908932608, total allocated 277872640, free 220113640, used 57759000, increment 0
+Initial loss: 9.2927495082169
+Initial test loss: 9.2927495082169
+Time since start: 39.803
+500: time = 2.000000 loss = 7.965143 testLoss 7.824571
+Jackknife: only tev_acc500m
+Making features
+makeFeatures: max memory 1908932608, total allocated 266862592, free 221379360, used 45483232, increment -12275768
+flood tev_acc500m: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 266862592, free 221273944, used 45588648, increment 105416
+linearPredictor: max memory 1908932608, total allocated 266862592, free 221273944, used 45588648, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 266862592, free 221273944, used 45588648, increment 0
+Sequential: max memory 1908932608, total allocated 266862592, free 221273944, used 45588648, increment 0
+Initial loss: 9.2927495082169
+Initial test loss: 9.2927495082169
+Time since start: 41.461
+500: time = 1.545000 loss = 8.746282 testLoss 8.652678
+Res.gain: 0.5464676839172657
+Jackknife: only tev_dem500m
+Making features
+makeFeatures: max memory 1908932608, total allocated 266862592, free 84631216, used 182231376, increment 136642728
+flood tev_dem500m: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 266862592, free 84631216, used 182231376, increment 0
+linearPredictor: max memory 1908932608, total allocated 266862592, free 84631216, used 182231376, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 266862592, free 84631216, used 182231376, increment 0
+Sequential: max memory 1908932608, total allocated 266862592, free 84631216, used 182231376, increment 0
+Initial loss: 9.2927495082169
+Initial test loss: 9.2927495082169
+Time since start: 42.483
+420: time = 0.983000 loss = 8.319942 testLoss 8.264966
+Res.gain: 0.972807438168422
+Jackknife: only tev_dir500m
+Making features
+makeFeatures: max memory 1908932608, total allocated 264765440, free 67716992, used 197048448, increment 14817072
+flood tev_dir500m: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 264765440, free 67714896, used 197050544, increment 2096
+linearPredictor: max memory 1908932608, total allocated 264765440, free 67714896, used 197050544, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 264765440, free 67714896, used 197050544, increment 0
+Sequential: max memory 1908932608, total allocated 264765440, free 67714896, used 197050544, increment 0
+Initial loss: 9.2927495082169
+Initial test loss: 9.2927495082169
+120: time = 0.239000 loss = 9.225192 testLoss 9.210298
+Res.gain: 0.06755711402657916
+Jackknife: only tev_landuse500m1
+Making features
+makeFeatures: max memory 1908932608, total allocated 264765440, free 65501040, used 199264400, increment 2213856
+flood tev_landuse500m1: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 264765440, free 62191488, used 202573952, increment 3309552
+linearPredictor: max memory 1908932608, total allocated 264765440, free 62191488, used 202573952, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 264765440, free 62191488, used 202573952, increment 0
+Sequential: max memory 1908932608, total allocated 264765440, free 62191488, used 202573952, increment 0
+Initial loss: 9.2927495082169
+Initial test loss: 9.2927495082169
+420: time = 0.622000 loss = 8.666610 testLoss 8.558243
+Res.gain: 0.626139102225503
+Jackknife: only tev_topoindex500m
+Making features
+makeFeatures: max memory 1908932608, total allocated 264765440, free 47116056, used 217649384, increment 15075432
+flood tev_topoindex500m: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+859 samples
+Density: max memory 1908932608, total allocated 264765440, free 43798840, used 220966600, increment 3317216
+linearPredictor: max memory 1908932608, total allocated 264765440, free 43798840, used 220966600, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 264765440, free 43798840, used 220966600, increment 0
+Sequential: max memory 1908932608, total allocated 264765440, free 43798840, used 220966600, increment 0
+Initial loss: 9.2927495082169
+Initial test loss: 9.2927495082169
+Time since start: 47.128
+440: time = 3.672000 loss = 8.389141 testLoss 8.304348
+Res.gain: 0.9036084406211806
+Ending

@@ -1,0 +1,62 @@
+Wed Dec 14 11:12:41 CST 2016
+MaxEnt version 3.3.3k
+Checking header of /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/layers/tev_topoindex500m.asc
+Reading samples from floods.csv
+Read samples: max memory 1908932608, total allocated 540016640, free 36620008, used 503396632, increment 292291520
+Extractor: max memory 1908932608, total allocated 540016640, free 31899320, used 508117320, increment 4720688
+Extracting random background and sample data
+86641 points with values for all grids
+Adding samples to background in feature space
+Command line used: 
+Command line to repeat: java density.MaxEnt nowarnings noprefixes responsecurves jackknife outputdirectory=/Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/noFCS samplesfile=/Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/samples/floods.csv environmentallayers=/Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/layers randomseed betamultiplier=150.0 writebackgroundpredictions responsecurvesexponent addallsamplestobackground writeplotdata fadebyclamping appendtoresultsfile -N tev_acc500m -N tev_controlstruct500m -N tev_controlstruct500m1 -N tev_dem500m -N tev_dir500m -N tev_flooded500m -N tev_flooded500m1 -N tev_landuse500m -N tev_landuse500m1
+Species: flood
+Layers: tev_topoindex500m
+Layertypes: Continuous
+responsecurves: true
+jackknife: true
+outputdirectory: /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/noFCS
+samplesfile: /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/samples/floods.csv
+environmentallayers: /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/layers
+randomseed: true
+betamultiplier: 150.0
+writebackgroundpredictions: true
+responsecurvesexponent: true
+addallsamplestobackground: true
+writeplotdata: true
+fadebyclamping: true
+appendtoresultsfile: true
+
+getSamples: max memory 1908932608, total allocated 539492352, free 468038096, used 71454256, increment -436663064
+Making features
+makeFeatures: max memory 1908932608, total allocated 539492352, free 466616248, used 72876104, increment 1421848
+flood: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+1725 samples
+Density: max memory 1908932608, total allocated 539492352, free 464421808, used 75070544, increment 2194440
+linearPredictor: max memory 1908932608, total allocated 539492352, free 463148408, used 76343944, increment 1273400
+FeaturedSpace: max memory 1908932608, total allocated 539492352, free 463148408, used 76343944, increment 0
+Sequential: max memory 1908932608, total allocated 539492352, free 463148408, used 76343944, increment 0
+Initial loss: 9.36947859331448
+Time since start: 1.241
+60: time = 0.892000 loss = 8.941115
+Resulting gain: 0.42836322687647765
+Projecting...
+Writing file /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/noFCS/flood.asc
+Writing /Users/matteo/Documents/TempDisk/FloodTevereMaxEnt/noFCS/plots/flood.png
+flood response curves
+Response curve: only tev_topoindex500m
+Making features
+makeFeatures: max memory 1908932608, total allocated 539492352, free 124046216, used 415446136, increment 339102192
+flood tev_topoindex500m: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+1725 samples
+Density: max memory 1908932608, total allocated 539492352, free 120055440, used 419436912, increment 3990776
+linearPredictor: max memory 1908932608, total allocated 539492352, free 120055440, used 419436912, increment 0
+FeaturedSpace: max memory 1908932608, total allocated 539492352, free 120055440, used 419436912, increment 0
+Sequential: max memory 1908932608, total allocated 539492352, free 120055440, used 419436912, increment 0
+Initial loss: 9.36947859331448
+Time since start: 2.617
+60: time = 0.587000 loss = 8.941115
+Resulting gain: 0.42836322687647765
+flood response curves
+Ending

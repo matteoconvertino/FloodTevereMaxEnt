@@ -1,0 +1,9 @@
+tev_acc500m, 0.0, 0.0, 55425.0
+tev_controlstruct500m1, 0.0, 0.0, 15.0
+tev_dem500m, -9.151102148284128, -2.0, 514.0
+tev_dir500m, 0.0, 1.0, 64.0
+tev_landuse500m1, 0.0, 1.0, 39.0
+linearPredictorNormalizer, 0.0
+densityNormalizer, 3.583328574312759
+numBackgroundPoints, 16
+entropy, 1.780203283305952
